@@ -25,7 +25,7 @@ export default function ChartItem(props: any) {
         color: colors.primary,
         strokeWidth: 2,
         opacity: .1,
-        width: wp('21%'),
+        width: wp('22.5%'),
         height: hp('4%'),
         padding: 0,
         sampling: 8
@@ -39,7 +39,7 @@ export default function ChartItem(props: any) {
                 <Sparkline.Line />
                 <Sparkline.Fill />
             </Sparkline>
-            <LinearGradient colors={[colordefine(props.increment)?.gradient, colors.backgroundDark]} style={{ height: hp('2.2%'), width: wp('21%') }}>
+            <LinearGradient colors={[colordefine(props.increment)?.gradient, colors.backgroundDark]} style={{ height: hp('2.2%'), width: wp('22.5%') }}>
             </LinearGradient>
 
         </View>

@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',        
         alignItems:'center',
         paddingTop:globalValue.screenVerticalSpace,
-        paddingRight: globalValue.headinghorizontalSpace,
+        paddingRight: globalValue.screenHorizontalSpace,
         paddingBottom: globalValue.headingverticalSpace
     },
     headertext: {

@@ -23,6 +23,7 @@ export default function MainAssetsItem() {
         <Text style={styles.mainheading}>$1.213843</Text>
         <Text style={[styles.text, global.textRight]}>$89877</Text>
       </View>
+
       <ChartItem increment={true}></ChartItem>
 
     </View>
@@ -36,33 +37,37 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginRight: globalValue.headinghorizontalSpace,
-    borderTopColor:colors.borderColor,
-    borderTopWidth: 2,
+    marginRight: globalValue.screenHorizontalSpace,
+    borderTopColor: colors.borderColor,
+    borderTopWidth: 1,
+    borderBottomColor: colors.borderColor,
+    borderBottomWidth: 1,
+  },
+  imagecontainer: {
+    display: 'flex',
+    width: wp('33%'),
+    flexDirection: 'row'
   },
   itemimage: {
     height: wp('7.7%'),
     width: wp('7.8%'),
     marginRight: wp('2.2%'),
-    marginTop: wp('1%'),
     borderRadius: 5,
-    resizeMode:'cover',
+    resizeMode: 'cover',
   },
   mainheading: {
     fontSize: fonts.f19,
-   fontFamily: "HurmeGeometric-Bold",
+    fontFamily: "HurmeGeometric-Bold",
     color: colors.text,
+    includeFontPadding: false
+
   },
   text: {
     fontSize: fonts.f15,
     fontWeight: "400",
     color: colors.textmutedDark,
-    marginTop: wp('.7%'),
+    includeFontPadding: false
   },
-  imagecontainer:{
-    display:'flex',
-    width:wp('30%'),
-    flexDirection:'row'
-  }
+
 
 });

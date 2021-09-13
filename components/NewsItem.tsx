@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
         height: hp('12.7%'),
         width: wp('43%'),
         borderRadius:5,
-        paddingLeft:globalValue.headinghorizontalSpace,
+        paddingLeft:globalValue.screenHorizontalSpace,
         paddingTop:globalValue.headingverticalSpace,
         backgroundColor:colors.background,
         marginRight:globalValue.screenHorizontalSpace,
