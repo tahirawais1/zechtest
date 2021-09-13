@@ -1,0 +1,32 @@
+import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
+
+export const fonts={
+    f11: RFPercentage(1.4),
+    f12: RFPercentage(1.5),
+    f13: RFPercentage(1.6),
+    f14: RFPercentage(1.7),
+    f15: RFPercentage(1.8),
+    f16: RFPercentage(1.9),
+    f17: RFPercentage(2),
+    f18: RFPercentage(2.1),
+    f19: RFPercentage(2.2),
+    f20: RFPercentage(2.3),
+    f21: RFPercentage(2.4),
+    f22: RFPercentage(2.5),
+    f23: RFPercentage(2.6),
+    f24: RFPercentage(2.7),
+    f25: RFPercentage(2.8),
+    f26: RFPercentage(2.9),
+    f27: RFPercentage(3),
+    f28: RFPercentage(3.4),
+    f29: RFPercentage(3.5),
+    f30: RFPercentage(3.6),
+    f31: RFPercentage(3.7),
+    f32: RFPercentage(3.8),
+    f33: RFPercentage(3.9),
+    f35: RFPercentage(4.1),
+    f40: RFPercentage(4.6),
+    f45: RFPercentage(5.1),
+    f50: RFPercentage(5.6),
+    f55: RFPercentage(6.1)
+}
