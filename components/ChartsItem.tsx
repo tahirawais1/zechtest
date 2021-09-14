@@ -16,17 +16,17 @@ export default function ChartItem(props: any) {
 
     const colordefine = (increment: boolean) => {
 
-        colorvalue = increment ? { graph: '#00c896', gradient: '#00c8961a' } : { graph: '#ff0000', gradient: '#ff00001a' };
+        colorvalue = increment ? { graph: '#00c896', gradient: '#00c89633' } : { graph: '#ff0000', gradient: '#f003' };
 
         return colorvalue
     };
 
     Sparkline.defaultProps = {
-        color: colors.primary,
+        color: colordefine(props.increment)?.graph,
         strokeWidth: 2,
-        opacity: .1,
-        width: wp('22.5%'),
-        height: hp('4%'),
+        opacity: .2,
+        width: wp('21%'),
+        height: hp('2.4%'),
         padding: 0,
         sampling: 8
     }
@@ -39,7 +39,7 @@ export default function ChartItem(props: any) {
                 <Sparkline.Line />
                 <Sparkline.Fill />
             </Sparkline>
-            <LinearGradient colors={[colordefine(props.increment)?.gradient, colors.backgroundDark]} style={{ height: hp('2.2%'), width: wp('22.5%') }}>
+            <LinearGradient colors={[colordefine(props.increment)?.gradient, colors.backgroundDark]} style={{ height: hp('2.9%'), width: wp('21%') }}>
             </LinearGradient>
 
         </View>
@@ -54,12 +54,12 @@ const styles = StyleSheet.create({
         alignItems: 'flex-end'
     },
     mainheading: {
-        fontSize: fonts.f18,
+        fontSize: fonts.f19,
         textAlign: 'right',
         fontFamily: "HurmeGeometric-Bold",
         color: colors.primary,
         paddingBottom: hp('1%'),
-        paddingTop: hp('2.5%')
+        paddingTop: hp('2%')
     },
 
 

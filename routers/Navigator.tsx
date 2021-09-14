@@ -52,7 +52,7 @@ export default function Navigator() {
       <Tab.Navigator screenOptions={({ route }) => ({
         headerShown: false,
         tabBarActiveTintColor: colors.primary,
-        tabBarInactiveTintColor: colors.textmutedLight,
+        tabBarInactiveTintColor: colors.textmutedDark,
         tabBarStyle: {
           backgroundColor: colors.background,
           borderTopColor: colors.backgroundDark,
@@ -61,25 +61,25 @@ export default function Navigator() {
           height: hp('10%')
         },
         tabBarLabelStyle:{
-          fontSize:fonts.f13,
+          fontSize:fonts.f14,
           fontFamily:'HurmeGeometric-Bold'
         },
         tabBarIcon: ({ focused, color }) => {
           let imageName;
 
           if (route.name === 'Home') {
-            imageName = focused ? require('../assets/item.webp') : require('../assets/item.webp');
+            imageName = focused ? require('../assets/homeActive.webp') : require('../assets/dtradeActive.webp');
           } else if (route.name === 'Market') {
-            imageName = focused ? require('../assets/item.webp') : require('../assets/item.webp');
+            imageName = focused ? require('../assets/dtradeActive.webp') : require('../assets/marketInactive.webp');
           }
           else if (route.name === 'Trade') {
-            imageName = focused ? require('../assets/item.webp') : require('../assets/item.webp');
+            imageName = focused ? require('../assets/tradeActive.webp') : require('../assets/tradeInactive.webp');
           }
           else if (route.name === 'Wallet') {
-            imageName = focused ? require('../assets/item.webp') : require('../assets/item.webp');
+            imageName = focused ? require('../assets/dtradeActive.webp') : require('../assets/walletInactive.png');
           }
           else if (route.name === 'DTrade') {
-            imageName = focused ? require('../assets/item.webp') : require('../assets/item.webp');
+            imageName = focused ? require('../assets/dtradeActive.webp') : require('../assets/dtradeInactive.webp');
           }
           return <Image style={styles.itemimage} source={imageName} />
             ;
@@ -100,8 +100,8 @@ export default function Navigator() {
 const styles = StyleSheet.create({
 
   itemimage: {
-    height: hp('2.8%'),
-    width: wp('4.2%'),
+    height: hp('3.4%'),
+    width: wp('5.7%'),
     resizeMode:'cover',
 
   },

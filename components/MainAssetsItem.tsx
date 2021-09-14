@@ -12,19 +12,19 @@ export default function MainAssetsItem(props: any) {
     <View style={styles.mainassetscontainer}>
 
       <View style={styles.imagecontainer}>
-        <Image style={styles.itemimage} source={require('../assets/bitcoin.webp')} />
+        <Image style={styles.itemimage} source={props.img} />
         <View>
-          <Text style={styles.mainheading}>BTC</Text>
-          <Text style={styles.text}>Bitcoin</Text>
+          <Text style={styles.mainheading}>{props.currencyCode}</Text>
+          <Text style={styles.text}>{props.currencyName}</Text>
         </View>
       </View>
 
       <View>
-        <Text style={styles.mainheading}>$1.213843</Text>
-        <Text style={[styles.text, global.textRight]}>$89877</Text>
+        <Text style={styles.mainheading}>{props.value}</Text>
+        <Text style={[styles.text, global.textRight]}>{props.price}</Text>
       </View>
 
-      <ChartItem increment={true}></ChartItem>
+      <ChartItem increment={props.increment}></ChartItem>
 
     </View>
   );
@@ -39,9 +39,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginRight: globalValue.screenHorizontalSpace,
     borderTopColor: colors.borderColor,
-    borderTopWidth: 1,
-    borderBottomColor: colors.borderColor,
-    borderBottomWidth: 1,
+    borderTopWidth: 1.5,
   },
   imagecontainer: {
     display: 'flex',
@@ -51,15 +49,16 @@ const styles = StyleSheet.create({
   itemimage: {
     height: wp('7.7%'),
     width: wp('7.8%'),
-    marginRight: wp('2.2%'),
+    marginRight: wp('3%'),
     borderRadius: 5,
     resizeMode: 'cover',
   },
   mainheading: {
-    fontSize: fonts.f19,
-    fontFamily: "HurmeGeometric-Bold",
+    fontSize: fonts.f21,
+    fontFamily: "HurmeGeometric-SemiBold",
     color: colors.text,
-    includeFontPadding: false
+    includeFontPadding: false,
+    letterSpacing:1
   },
   text: {
     fontSize: fonts.f15,

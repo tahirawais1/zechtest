@@ -5,10 +5,10 @@ import { colors } from './colors';
 
 export const globalValue={
     
-    screenHorizontalSpace:wp('3.8%'),
+    screenHorizontalSpace:wp('4%'),
     screenVerticalSpace:hp('3.8%'),
     headingverticalSpace:hp('1.8%'),
-    headinghorizontalSpace:wp('1.8%'),
+    headinghorizontalSpace:wp('2.5%'),
 
 }
 

@@ -26,14 +26,15 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',        
         alignItems:'center',
-        paddingTop:globalValue.screenVerticalSpace,
+        paddingTop:hp('3.2%'),
+        paddingBottom: hp('1.6%'),
         paddingRight: globalValue.screenHorizontalSpace,
-        paddingBottom: globalValue.headingverticalSpace
     },
     headertext: {
         fontSize: fonts.f29,
         fontFamily: "HurmeGeometric-Bold",
         color: colors.text,
+
     },
     headerbtn:{
         display: 'flex',
@@ -42,9 +43,9 @@ const styles = StyleSheet.create({
         alignItems:'center'
     },
     btnText: {
-        fontSize: fonts.f19,
+        fontSize: fonts.f20,
         color: colors.primary,
-        fontFamily: "HurmeGeometric-SemiBold",
+        fontFamily: "HurmeGeometric-Regular",
         paddingRight:wp('.7%')
     },
     

@@ -14,9 +14,15 @@ class Home extends Component {
 
   render() {
     const topicons = () => {
-      return ['a', 'b', 'c', 'd', 'e'].map((element) => {
+      return [
+        {name:'Exchange',img:require('../assets/exchange.png')},
+        {name:'DTrade',img:require('../assets/exchange.png')},
+        {name:'Buy Crypto',img:require('../assets/buyCrypto.png')},
+        {name:'Deposit',img:require('../assets/deposit.png')},
+        {name:'Referral',img:require('../assets/referral.png')},
+      ].map((element) => {
         return (
-          <HeaderIconItem></HeaderIconItem>
+          <HeaderIconItem img={element.img} name={element.name}></HeaderIconItem>
         );
       });
     };
@@ -44,10 +50,10 @@ class Home extends Component {
       });
     };
     const mainAssetsItem = () => {
-      return ['a', 'b', 'c', 'd', 'e'].map((element) => {
+      return [true,false,true,true].map((element) => {
         return (
           <ScrollView>
-            <MainAssetsItem></MainAssetsItem>
+            <MainAssetsItem increment={element} img={require('../assets/bitcoin.webp')} currencyCode={'BTC'} currencyName={'Bitcoin'}value={1.232133} price={'$ 18123.213'}></MainAssetsItem>
           </ScrollView>
         );
       });

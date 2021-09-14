@@ -18,16 +18,19 @@ const styles = StyleSheet.create({
     container: {
         height: hp('12.7%'),
         width: wp('43%'),
-        borderRadius:5,
-        paddingLeft:globalValue.screenHorizontalSpace,
+        borderRadius:9,
+        paddingLeft:wp('3%'),
+        paddingRight:wp('3%'),
         paddingTop:globalValue.headingverticalSpace,
         backgroundColor:colors.background,
         marginRight:globalValue.screenHorizontalSpace,
+        marginBottom:hp('1.4%'),
     },
     mainheading: {
-        fontSize: fonts.f21,
+        fontSize: fonts.f20,
        fontFamily: "HurmeGeometric-Regular",
         color: colors.textmutedLight,
+        lineHeight:hp('2.8%')
     },
     subheading: {
         paddingTop:hp('.7%'),

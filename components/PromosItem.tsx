@@ -19,14 +19,15 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     itemimage: {
-        height: hp('22.5%'),
+        height: hp('21%'),
         width: wp('60%'),
-        borderRadius: 5,
+        borderRadius: 7,
         resizeMode:'cover',
-        marginRight: globalValue.screenHorizontalSpace,
+        marginRight: globalValue.headinghorizontalSpace,
     },
     mainheading: {
         paddingTop:hp('1%'),
+        paddingBottom:hp('1%'),
         fontSize: fonts.f20,
         fontFamily: "HurmeGeometric-Regular",
         color: colors.textmutedLight,
