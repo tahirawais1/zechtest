@@ -5,11 +5,11 @@ import { colors } from '../global/colors';
 import { fonts } from '../global/fonts';
 import { globalValue } from '../global/global';
 
-export default function NewsItem() {
+export default function NewsItem(props: any) {
     return (
         <View style={styles.container}>
-            <Text style={styles.mainheading}>Decoin Enabled stop Limit order</Text>
-            <Text style={styles.subheading}>12/10/21</Text>
+            <Text style={styles.mainheading}>{props.heading}</Text>
+            <Text style={styles.subheading}>{props.date}</Text>
         </View>
     );
 }

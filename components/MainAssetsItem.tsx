@@ -6,7 +6,7 @@ import { colors } from '../global/colors';
 import { fonts } from '../global/fonts';
 import ChartItem from './ChartsItem';
 
-export default function MainAssetsItem() {
+export default function MainAssetsItem(props: any) {
 
   return (
     <View style={styles.mainassetscontainer}>
@@ -60,12 +60,12 @@ const styles = StyleSheet.create({
     fontFamily: "HurmeGeometric-Bold",
     color: colors.text,
     includeFontPadding: false
-
   },
   text: {
     fontSize: fonts.f15,
     fontWeight: "400",
     color: colors.textmutedDark,
+    paddingTop:hp('.6%'),
     includeFontPadding: false
   },
 

@@ -30,10 +30,15 @@ class Home extends Component {
       });
     };
     const newsItem = () => {
-      return ['a', 'b', 'c', 'd', 'e'].map((element) => {
+      return [
+        {heading:'Decoin Enabled stop Limit order',date:'12/10/2021'},
+        {heading:'Decoin Enabled stop Limit order',date:'12/10/2021'},
+        {heading:'Decoin Enabled stop Limit order',date:'12/10/2021'},
+        {heading:'Decoin Enabled stop Limit order',date:'12/10/2021'},
+      ].map((element) => {
         return (
           <ScrollView horizontal={true}>
-            <NewsItem></NewsItem>
+            <NewsItem heading={element.heading} date={element.date}></NewsItem>
           </ScrollView>
         );
       });
